@@ -1,0 +1,18 @@
+body {
+    width: 700px;
+    margin: 0 auto;
+  }
+  
+  
+  .item {
+    margin : 0 auto
+  }
+  
+  .fit-picture {
+    color : black;
+  } 
+  
+  ul {
+    list-style: none;
+  }
+  
