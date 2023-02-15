@@ -1,0 +1,95 @@
+/* utf-8 */
+
+body {
+    background-color: #eee;
+    color: black;
+  }
+  
+  @media (min-width: 576px) and (max-width: 767px) {
+    .container {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .album {
+    padding-top: 50px;
+  
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 575px) {
+    .item {
+      width: calc(50% - 10px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+      border: 0;
+    }
+  
+    .item:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .item {
+      width: calc((100% - 20px * 2) / 3 - 1px); /* IE対策のため変な計算になってる… */
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .item:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    margin-top: 0.75em;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .card-text {
+    font-size: 200%;
+    text-align: justify;
+    color: black;
+  
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+  
+  /* footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+  */
+  
+  h1 {
+    font-size: 200%;
+  }
+  
+  p {
+    color: black;
+    text-align: center;
+  }
+  
+  .float-right {
+  float: right;
+  }
+  
